@@ -1,4 +1,9 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+
+FirebaseAuth auth = FirebaseAuth.instance;
+FirebaseFirestore firestore = FirebaseFirestore.instance;
 
 List<String> categories = [
   'Prime',
@@ -50,4 +55,18 @@ List<String> clothingDeal = [
   'gift.jpg',
   'beauty.jpg',
   'electronics.jpg'
+];
+List<String> yourOrders = [
+  'Appliances.png',
+  'Beauty.png',
+  'Books.png',
+  'Electronics.png',
+  'Mobiles.png'
+];
+List<String> byAgain = [
+  'Prime.png',
+  'Home.png',
+  'Movies.png',
+  'miniTV.png',
+  'Pharmacy.png',
 ];
